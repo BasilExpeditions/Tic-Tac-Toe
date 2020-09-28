@@ -55,6 +55,8 @@ const whosTurn = function () {
 
 let totalTurns = 0;
 
+
+
 const checkTurns = function () {
   totalTurns = parseInt(totalTurns) + 1
   console.log('TOTAL TURNS : ' + totalTurns)
