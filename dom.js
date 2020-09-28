@@ -1,40 +1,115 @@
 $(document).ready(function() {
     console.log( "ready!" );
 
+    whosTurn();
+    console.log(playerOne)
+    console.log(playerTwo)
+
     $('#button1').on('click', function () {
-      console.log('button 1 clicked')
-      playerOneMoveTaken.push(boardPosition.position1)
+      
+      if(playerOne === true) {
+        playerOneMoveTaken.push(boardChoices.position1)
+      } else {
+        playerTwoMoveTaken.push(boardChoices.position1)
+      }
+      console.log(`Player Ones move: ${playerOneMoveTaken} `)
+      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
+      whosTurn();
     })
+
     $('#button2').on('click', function () {
-      console.log('button 2 clicked')
-      playerOneMoveTaken.push(boardPosition.position2)
+
+      if(playerOne === true) {
+        playerOneMoveTaken.push(boardChoices.position2)
+      } else {
+        playerTwoMoveTaken.push(boardChoices.position2)
+      }
+      console.log(`Player Ones move: ${playerOneMoveTaken} `)
+      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
+      whosTurn();
     })
+
     $('#button3').on('click', function () {
-      console.log('button 3 clicked')
-      playerOneMoveTaken.push(boardPosition.position3)
+
+      if(playerOne === true) {
+        playerOneMoveTaken.push(boardChoices.position3)
+      } else {
+        playerTwoMoveTaken.push(boardChoices.position3)
+      }
+      console.log(`Player Ones move: ${playerOneMoveTaken} `)
+      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
+      whosTurn();
     })
+
     $('#button4').on('click', function () {
-      console.log('button 4 clicked')
-      playerOneMoveTaken.push(boardPosition.position4)
+
+      if(playerOne === true) {
+        playerOneMoveTaken.push(boardChoices.position4)
+      } else {
+        playerTwoMoveTaken.push(boardChoices.position4)
+      }
+      console.log(`Player Ones move: ${playerOneMoveTaken} `)
+      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
+      whosTurn();
     })
+
     $('#button5').on('click', function () {
-      console.log('button 5 clicked')
-      playerOneMoveTaken.push(boardPosition.position5)
+
+      if(playerOne === true) {
+        playerOneMoveTaken.push(boardChoices.position5)
+      } else {
+        playerTwoMoveTaken.push(boardChoices.position5)
+      }
+      console.log(`Player Ones move: ${playerOneMoveTaken} `)
+      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
+      whosTurn();
     })
+
     $('#button6').on('click', function () {
-      console.log('button 6 clicked')
-      playerOneMoveTaken.push(boardPosition.position6)
+
+      if(playerOne === true) {
+        playerOneMoveTaken.push(boardChoices.position6)
+      } else {
+        playerTwoMoveTaken.push(boardChoices.position6)
+      }
+      console.log(`Player Ones move: ${playerOneMoveTaken} `)
+      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
+      whosTurn();
     })
+
     $('#button7').on('click', function () {
-      console.log('button 7 clicked')
-      playerOneMoveTaken.push(boardPosition.position7)
+
+      if(playerOne === true) {
+        playerOneMoveTaken.push(boardChoices.position7)
+      } else {
+        playerTwoMoveTaken.push(boardChoices.position7)
+      }
+      console.log(`Player Ones move: ${playerOneMoveTaken} `)
+      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
+      whosTurn();
     })
+
     $('#button8').on('click', function () {
-      console.log('button 8 clicked')
-      playerOneMoveTaken.push(boardPosition.position8)
+
+      if(playerOne === true) {
+        playerOneMoveTaken.push(boardChoices.position8)
+      } else {
+        playerTwoMoveTaken.push(boardChoices.position8)
+      }
+      console.log(`Player Ones move: ${playerOneMoveTaken} `)
+      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
+      whosTurn();
     })
+
     $('#button9').on('click', function () {
-      console.log('button 9 clicked')
-      playerOneMoveTaken.push(boardPosition.position9)
+
+      if(playerOne === true) {
+        playerOneMoveTaken.push(boardChoices.position9)
+      } else {
+        playerTwoMoveTaken.push(boardChoices.position9)
+      }
+      console.log(`Player Ones move: ${playerOneMoveTaken} `)
+      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
+      whosTurn();
     })
 })

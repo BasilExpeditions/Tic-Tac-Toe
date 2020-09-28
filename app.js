@@ -2,7 +2,9 @@ console.log('Working scaffold')
 
 //Tic Tac Toe
 
-const boardPosition = {
+// Register the board of 9 positions
+
+const boardChoices = {
   position1: '1',
   position2: '2',
   position3: '3',
@@ -14,21 +16,38 @@ const boardPosition = {
   position9: '9',
 };
 
-// Register the board of 9 positions
-
-// When a player inputs a position update the player array
-
 
 
 // Player 1 turn
 
 const playerOneMoveTaken = [];
 
+let playerOne = true;
 
 
 // Player 2 turn
 
 const playerTwoMoveTaken = [];
 
+let playerTwo = false;
+
+// Turn logic
+
+const whosTurn = function () {
+  if(playerOneMoveTaken.length === playerTwoMoveTaken.length) {
+    console.log('PLAYER 1, YOUR TURN')
+    playerOne = true;
+    playerTwo = false;
+  } else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
+    console.log('PLAYER 2, YOUR TURN')
+    playerOne = false;
+    playerTwo = true;
+  } else {
+    console.log('PLAYER 1, YOUR TURN')
+    playerOne = true;
+    playerTwo = false;
+  }
+
+}
 
 // Win condition = if a player has 3 in a row
