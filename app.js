@@ -32,11 +32,14 @@ let playerTwo = false;
 // Turn logic
 
 const whosTurn = function () {
+
   if(playerOneMoveTaken.length === playerTwoMoveTaken.length) {
     console.log('PLAYER 1, YOUR TURN')
     playerOne = true;
     playerTwo = false;
-  } else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
+  }
+
+  else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
     console.log('PLAYER 2, YOUR TURN')
     playerOne = false;
     playerTwo = true;
@@ -47,17 +50,18 @@ const whosTurn = function () {
   }
 
 }
+
+// Total turns logic
+
 let totalTurns = 0;
 
 const checkTurns = function () {
   totalTurns = parseInt(totalTurns) + 1
-  console.log('Total Turns : ' + totalTurns)
+  console.log('TOTAL TURNS : ' + totalTurns)
   if (totalTurns >= 9) {
     console.log('GAME OVER')
   }
 }
-// Only one button can be used per game
-// If playerOneMoveTaken === playerTwoMoveTaken
 
 
 // Win condition = if a player has 3 in a row
