@@ -1,12 +1,11 @@
 $(document).ready(function() {
-    console.log( "ready!" );
 
     whosTurn();
-    console.log(playerOne)
-    console.log(playerTwo)
 
     $('#button1').on('click', function () {
-      
+
+      checkTurns();
+
       if(playerOne === true) {
         playerOneMoveTaken.push(boardChoices.position1)
       } else {
@@ -18,6 +17,8 @@ $(document).ready(function() {
     })
 
     $('#button2').on('click', function () {
+
+      checkTurns();
 
       if(playerOne === true) {
         playerOneMoveTaken.push(boardChoices.position2)
@@ -31,6 +32,8 @@ $(document).ready(function() {
 
     $('#button3').on('click', function () {
 
+      checkTurns();
+
       if(playerOne === true) {
         playerOneMoveTaken.push(boardChoices.position3)
       } else {
@@ -42,6 +45,8 @@ $(document).ready(function() {
     })
 
     $('#button4').on('click', function () {
+
+      checkTurns();
 
       if(playerOne === true) {
         playerOneMoveTaken.push(boardChoices.position4)
@@ -55,6 +60,8 @@ $(document).ready(function() {
 
     $('#button5').on('click', function () {
 
+      checkTurns();
+
       if(playerOne === true) {
         playerOneMoveTaken.push(boardChoices.position5)
       } else {
@@ -66,6 +73,8 @@ $(document).ready(function() {
     })
 
     $('#button6').on('click', function () {
+
+      checkTurns();
 
       if(playerOne === true) {
         playerOneMoveTaken.push(boardChoices.position6)
@@ -79,6 +88,8 @@ $(document).ready(function() {
 
     $('#button7').on('click', function () {
 
+      checkTurns();
+
       if(playerOne === true) {
         playerOneMoveTaken.push(boardChoices.position7)
       } else {
@@ -91,6 +102,8 @@ $(document).ready(function() {
 
     $('#button8').on('click', function () {
 
+      checkTurns();
+
       if(playerOne === true) {
         playerOneMoveTaken.push(boardChoices.position8)
       } else {
@@ -102,6 +115,8 @@ $(document).ready(function() {
     })
 
     $('#button9').on('click', function () {
+
+      checkTurns();
 
       if(playerOne === true) {
         playerOneMoveTaken.push(boardChoices.position9)

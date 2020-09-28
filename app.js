@@ -1,5 +1,3 @@
-console.log('Working scaffold')
-
 //Tic Tac Toe
 
 // Register the board of 9 positions
@@ -49,5 +47,17 @@ const whosTurn = function () {
   }
 
 }
+let totalTurns = 0;
+
+const checkTurns = function () {
+  totalTurns = parseInt(totalTurns) + 1
+  console.log('Total Turns : ' + totalTurns)
+  if (totalTurns >= 9) {
+    console.log('GAME OVER')
+  }
+}
+// Only one button can be used per game
+// If playerOneMoveTaken === playerTwoMoveTaken
+
 
 // Win condition = if a player has 3 in a row
