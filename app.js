@@ -37,16 +37,19 @@ const whosTurn = function () {
     console.log('PLAYER 1, YOUR TURN')
     playerOne = true;
     playerTwo = false;
+    whoWon();
   }
 
   else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
     console.log('PLAYER 2, YOUR TURN')
     playerOne = false;
     playerTwo = true;
+    whoWon();
   } else {
     console.log('PLAYER 1, YOUR TURN')
     playerOne = true;
     playerTwo = false;
+    whoWon();
   }
 
 }
@@ -65,5 +68,27 @@ const checkTurns = function () {
   }
 }
 
+// Win condition
 
-// Win condition = if a player has 3 in a row
+const winCondition = {
+  horizontal1: ['1', '2', '3'],
+  horizontal2: ['4', '5', '6'],
+  horizontal3: ['7', '8', '9'],
+  vertical1: ['1', '4', '7'],
+  vertical2: ['2', '5', '8'],
+  vertical3: ['3', '6', '9'],
+  diagonal1: ['1', '5', '9'],
+  diagonal2: ['3', '5', '7']
+}
+
+const whoWon = function () {
+  for ( let keys in winCondition) {
+    if (winCondition[keys].every(answer => playerOneMoveTaken.includes(answer))) {
+
+      console.log('PLAYER ONE WINS');
+
+    } else if (winCondition[keys].every(answer => playerTwoMoveTaken.includes(answer))) {
+      console.log('PLAYER TWO WINS')
+    }
+  }
+}

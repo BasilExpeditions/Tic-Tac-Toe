@@ -21,11 +21,16 @@ $(document).ready(function() {
 
         if(playerOne === true) {
           playerOneMoveTaken.push(boardChoices.position1)
+          $('#button1').text('X')
           checkTurns();
+
 
         } else {
           playerTwoMoveTaken.push(boardChoices.position1)
+          $('#button1').text('O')
           checkTurns();
+
+
         }
 
       }
@@ -55,10 +60,12 @@ $(document).ready(function() {
           playerOneMoveTaken.push(boardChoices.position2)
           checkTurns();
 
+
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position2)
           checkTurns();
+
 
         }
 
@@ -90,10 +97,12 @@ $(document).ready(function() {
           playerOneMoveTaken.push(boardChoices.position3)
           checkTurns();
 
+
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position3)
           checkTurns();
+
 
         }
 
@@ -125,10 +134,12 @@ $(document).ready(function() {
           playerOneMoveTaken.push(boardChoices.position4)
           checkTurns();
 
+
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position4)
           checkTurns();
+
 
         }
 
@@ -159,10 +170,12 @@ $(document).ready(function() {
           playerOneMoveTaken.push(boardChoices.position5)
           checkTurns();
 
+
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position5)
           checkTurns();
+
 
         }
 
@@ -194,10 +207,12 @@ $(document).ready(function() {
           playerOneMoveTaken.push(boardChoices.position6)
           checkTurns();
 
+
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position6)
           checkTurns();
+
 
         }
 
@@ -229,10 +244,12 @@ $(document).ready(function() {
           playerOneMoveTaken.push(boardChoices.position7)
           checkTurns();
 
+
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position7)
           checkTurns();
+
 
         }
 
@@ -264,10 +281,12 @@ $(document).ready(function() {
           playerOneMoveTaken.push(boardChoices.position8)
           checkTurns();
 
+
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position8)
           checkTurns();
+
 
         }
 
@@ -299,10 +318,12 @@ $(document).ready(function() {
           playerOneMoveTaken.push(boardChoices.position9)
           checkTurns();
 
+
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position9)
           checkTurns();
+
 
         }
 
