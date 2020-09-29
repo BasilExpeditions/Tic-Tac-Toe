@@ -6,22 +6,38 @@ body {
 }
 
 .board-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  max-width: 960px;
-  width: 50%;
-  margin: auto;
+  display: inline-grid;
+  background: red;
+  grid-template-columns: auto 1fr 1fr;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 25px;
 }
 .square {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
   font-size: 30px;
   text-align: center;
   width: 100px;
   height: 100px;
-  margin: 10px;
   font-size: 300%;
   vertical-align: center;
+}
+
+#button1, #button2, #button3 {
+  border-top: none;
+}
+
+#button1, #button4, #button7 {
+  border-left: none;
+}
+#button7, #button8, #button9 {
+  border-bottom: none;
+}
+
+#button3, #button6, #button9 {
+  border-right: none;
 }
