@@ -21,13 +21,13 @@ $(document).ready(function() {
 
         if(playerOne === true) {
           playerOneMoveTaken.push(boardChoices.position1)
-          $('#button1').text('X')
+          $('#button1').text('O')
           checkTurns();
 
 
         } else {
           playerTwoMoveTaken.push(boardChoices.position1)
-          $('#button1').text('O')
+          $('#button1').text('X')
           checkTurns();
 
 
@@ -58,12 +58,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position2)
+          $('#button2').text('O')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position2)
+          $('#button2').text('X')
           checkTurns();
 
 
@@ -95,12 +97,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position3)
+          $('#button3').text('O')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position3)
+          $('#button3').text('X')
           checkTurns();
 
 
@@ -132,12 +136,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position4)
+          $('#button4').text('O')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position4)
+          $('#button4').text('X')
           checkTurns();
 
 
@@ -168,12 +174,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position5)
+          $('#button5').text('O')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position5)
+          $('#button5').text('X')
           checkTurns();
 
 
@@ -205,12 +213,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position6)
+          $('#button6').text('O')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position6)
+          $('#button6').text('X')
           checkTurns();
 
 
@@ -242,12 +252,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position7)
+          $('#button7').text('O')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position7)
+          $('#button7').text('X')
           checkTurns();
 
 
@@ -279,12 +291,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position8)
+          $('#button8').text('O')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position8)
+          $('#button8').text('X')
           checkTurns();
 
 
@@ -316,12 +330,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position9)
+          $('#button9').text('O')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position9)
+          $('#button9').text('X')
           checkTurns();
 
 
