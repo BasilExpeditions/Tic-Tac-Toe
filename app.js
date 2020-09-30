@@ -34,7 +34,7 @@ let playerTwo = false;
 const whosTurn = function () {
 
   if(playerOneMoveTaken.length === playerTwoMoveTaken.length) {
-    $('h3').text('Turn: React')
+    $('h3').replaceWith('<h3>Turn: <span id="span-react">React</span></h3>')
     playerOne = true;
     playerTwo = false;
     whoWon();
@@ -42,13 +42,13 @@ const whosTurn = function () {
   }
 
   else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
-    $('h3').text('Turn: Angular')
+    $('h3').replaceWith('<h3>Turn: <span id="span-angular">Angular</span></h3>')
     playerOne = false;
     playerTwo = true;
     whoWon();
 
   } else {
-    $('h3').text('Turn: React')
+    $('h3').replaceWith('<h3>Turn: <span id="span-react">React</span></h3>')
     playerOne = true;
     playerTwo = false;
     whoWon();
@@ -63,6 +63,15 @@ const whosTurn = function () {
 // Total turns logic
 
 let totalTurns = 0;
+
+const gameDraw = function () {
+  totalTurns = parseInt(totalTurns) + 1
+
+  if (totalTurns == 9) {
+    $('h3').replaceWith('<h1>DRAW</h1>')
+    return;
+  }
+}
 
 
 
@@ -96,9 +105,10 @@ const winCondition = {
 
 const whoWon = function () {
   for ( let keys in winCondition) {
+
     if (winCondition[keys].every(answer => playerOneMoveTaken.includes(answer))) {
       console.log('PLAYER ONE WINS');
-      $('h3').replaceWith('<h1>REACT WINS</h1>')
+      $('h3').replaceWith('<h1><span id="span-react">REACT</span> WINS</h1>')
       player1Win = true;
       gameFinished = true;
       return;
@@ -106,12 +116,10 @@ const whoWon = function () {
 
     } else if (winCondition[keys].every(answer => playerTwoMoveTaken.includes(answer))) {
       console.log('PLAYER TWO WINS')
-      $('h3').replaceWith('<h1>ANGULAR WINS</h1>')
+      $('h3').replaceWith('<h1><span id="span-angular">ANGULAR</span> WINS</h1>')
+      $("#board-id").children().attr("disabled","disabled");
       player2Win = true;
       gameFinished = true;
-      return;
-    } else if (totalTurns == 9) {
-      $('h3').replaceWith('<h1>ITS A DRAW</h1>')
       return;
     }
 

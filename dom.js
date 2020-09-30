@@ -41,8 +41,7 @@ $(document).ready(function() {
 
       whosTurn();
 
-      totalTurns = parseInt(totalTurns) + 1
-      console.log('TOTAL TURNS : ' + totalTurns)
+      gameDraw();
 
     })
 
@@ -82,8 +81,7 @@ $(document).ready(function() {
 
       whosTurn();
 
-      totalTurns = parseInt(totalTurns) + 1
-      console.log('TOTAL TURNS : ' + totalTurns)
+      gameDraw();
 
     })
 
@@ -124,8 +122,7 @@ $(document).ready(function() {
 
       whosTurn();
 
-      totalTurns = parseInt(totalTurns) + 1
-      console.log('TOTAL TURNS : ' + totalTurns)
+      gameDraw();
 
     })
 
@@ -166,8 +163,7 @@ $(document).ready(function() {
 
       whosTurn();
 
-      totalTurns = parseInt(totalTurns) + 1
-      console.log('TOTAL TURNS : ' + totalTurns)
+      gameDraw();
 
     })
 
@@ -208,8 +204,7 @@ $(document).ready(function() {
 
       whosTurn();
 
-      totalTurns = parseInt(totalTurns) + 1
-      console.log('TOTAL TURNS : ' + totalTurns)
+      gameDraw();
 
     })
 
@@ -250,8 +245,7 @@ $(document).ready(function() {
 
 
       whosTurn();
-      totalTurns = parseInt(totalTurns) + 1
-      console.log('TOTAL TURNS : ' + totalTurns)
+      gameDraw();
 
     })
 
@@ -292,8 +286,7 @@ $(document).ready(function() {
 
       whosTurn();
 
-      totalTurns = parseInt(totalTurns) + 1
-      console.log('TOTAL TURNS : ' + totalTurns)
+      gameDraw();
 
     })
 
@@ -334,8 +327,7 @@ $(document).ready(function() {
 
       whosTurn();
 
-      totalTurns = parseInt(totalTurns) + 1
-      console.log('TOTAL TURNS : ' + totalTurns)
+      gameDraw();
 
     })
 
@@ -376,8 +368,7 @@ $(document).ready(function() {
 
       whosTurn();
 
-      totalTurns = parseInt(totalTurns) + 1
-      console.log('TOTAL TURNS : ' + totalTurns)
+      gameDraw();
 
     })
 
