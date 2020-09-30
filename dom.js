@@ -22,15 +22,15 @@ $(document).ready(function() {
 
         if(playerOne === true) {
           playerOneMoveTaken.push(boardChoices.position1)
-          $('#button1').text('O')
+          $('#button1').append('<i class="fab fa-react"></i>')
           checkTurns();
 
 
         } else {
           playerTwoMoveTaken.push(boardChoices.position1)
-          $('#button1').text('X')
+          $('#button1').append('<i class="fab fa-angular"></i>')
           checkTurns();
-          
+
 
         }
 
@@ -59,14 +59,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position2)
-          $('#button2').text('O')
+          $('#button2').append('<i class="fab fa-react"></i>')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position2)
-          $('#button2').text('X')
+          $('#button2').append('<i class="fab fa-angular"></i>')
           checkTurns();
 
 
@@ -98,14 +98,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position3)
-          $('#button3').text('O')
+          $('#button3').append('<i class="fab fa-react"></i>')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position3)
-          $('#button3').text('X')
+          $('#button3').append('<i class="fab fa-angular"></i>')
           checkTurns();
 
 
@@ -137,14 +137,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position4)
-          $('#button4').text('O')
+          $('#button4').append('<i class="fab fa-react"></i>')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position4)
-          $('#button4').text('X')
+          $('#button4').append('<i class="fab fa-angular"></i>')
           checkTurns();
 
 
@@ -175,14 +175,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position5)
-          $('#button5').text('O')
+          $('#button5').append('<i class="fab fa-react"></i>')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position5)
-          $('#button5').text('X')
+          $('#button5').append('<i class="fab fa-angular"></i>')
           checkTurns();
 
 
@@ -214,14 +214,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position6)
-          $('#button6').text('O')
+          $('#button6').append('<i class="fab fa-react"></i>')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position6)
-          $('#button6').text('X')
+          $('#button6').append('<i class="fab fa-angular"></i>')
           checkTurns();
 
 
@@ -253,14 +253,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position7)
-          $('#button7').text('O')
+          $('#button7').append('<i class="fab fa-react"></i>')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position7)
-          $('#button7').text('X')
+          $('#button7').append('<i class="fab fa-angular"></i>')
           checkTurns();
 
 
@@ -292,14 +292,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position8)
-          $('#button8').text('O')
+          $('#button8').append('<i class="fab fa-react"></i>')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position8)
-          $('#button8').text('X')
+          $('#button8').append('<i class="fab fa-angular"></i>')
           checkTurns();
 
 
@@ -331,14 +331,14 @@ $(document).ready(function() {
         if(playerOne === true) {
 
           playerOneMoveTaken.push(boardChoices.position9)
-          $('#button9').text('O')
+          $('#button9').append('<i class="fab fa-react"></i>')
           checkTurns();
 
 
         } else {
 
           playerTwoMoveTaken.push(boardChoices.position9)
-          $('#button9').text('X')
+          $('#button9').append('<i class="fan fa-angular"></i>')
           checkTurns();
 
 

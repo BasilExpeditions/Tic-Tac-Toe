@@ -34,19 +34,19 @@ let playerTwo = false;
 const whosTurn = function () {
 
   if(playerOneMoveTaken.length === playerTwoMoveTaken.length) {
-    $('h3').text('Turn: Player 1')
+    $('h3').text('Turn: React')
     playerOne = true;
     playerTwo = false;
     whoWon();
   }
 
   else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
-    $('h3').text('Turn: Player 2')
+    $('h3').text('Turn: Angular')
     playerOne = false;
     playerTwo = true;
     whoWon();
   } else {
-    $('h3').text('Turn: Player 1')
+    $('h3').text('Turn: React')
     playerOne = true;
     playerTwo = false;
     whoWon();
@@ -65,7 +65,6 @@ const checkTurns = function () {
   console.log('TOTAL TURNS : ' + totalTurns)
   if (totalTurns >= 9) {
     alert('Its a draw!')
-    location.reload()
   }
 }
 
@@ -86,13 +85,13 @@ const whoWon = function () {
   for ( let keys in winCondition) {
     if (winCondition[keys].every(answer => playerOneMoveTaken.includes(answer))) {
       console.log('PLAYER ONE WINS');
-      $('h3').after('<h1>PLAYER ONE WINS</h1>')
+      $('h3').after('<h1>REACT WINS</h1>')
       return;
 
 
     } else if (winCondition[keys].every(answer => playerTwoMoveTaken.includes(answer))) {
       console.log('PLAYER TWO WINS')
-      $('h3').after('<h1>PLAYER TWO WINS</h1>')
+      $('h3').after('<h1>ANGULAR WINS</h1>')
       return;
 
     }
