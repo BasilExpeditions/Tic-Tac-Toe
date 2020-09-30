@@ -1,6 +1,4 @@
 
-
-
 body {
   text-align: center;
   max-width: 960px;
@@ -9,14 +7,12 @@ body {
 
 .board-container {
   display: inline-grid;
-  background: black;
   grid-template-columns: auto 1fr 1fr;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   padding: 15px;
-  border-radius: 25px;
 }
 .square {
   padding: 5px;
@@ -25,7 +21,7 @@ body {
   height: 125px;
   font-size: 465%;
   vertical-align: center;
-  color: white
+  color: white;
 }
 
 .board-container div.square:hover {
@@ -63,6 +59,21 @@ body {
     #button9 {
       background-color: #3399FF
     }
+
+#button1{
+  border-top-left-radius: 10%;
+}
+#button3 {
+  border-top-right-radius: 10%;
+}
+
+#button7 {
+  border-bottom-left-radius: 10%;
+}
+
+#button9 {
+  border-bottom-right-radius: 10%;
+}
 
 #button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover, #button6:hover, #button7:hover, #button8:hover, #button9:hover {
   opacity: 0.9;
@@ -119,7 +130,7 @@ body {
 
 
 .fa-angular {
-     color: #ff3d41 !important;
+     color: #ff3d41;
      -webkit-animation-name: spin;
        -webkit-animation-duration: 4000ms;
        -webkit-animation-iteration-count: infinite;
