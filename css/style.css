@@ -16,7 +16,7 @@ body {
   border-radius: 25px;
 }
 .square {
-  border: 2px solid white;
+  border: 2px solid #FFFFFF;
   padding: 5px;
   font-size: 30px;
   text-align: center;
@@ -47,12 +47,12 @@ body {
   #button5,
    #button7,
     #button9 {
-      background-color: #800080
+      background-color: #3399FF
     }
 
 #button2,
  #button4,
   #button6,
    #button8 {
-     background-color: #db85ec
+     background-color: #3366CC
    }

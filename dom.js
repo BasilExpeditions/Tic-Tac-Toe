@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     whosTurn();
 
+
     const deniedAccess = 'This position has already been used'
 
     $('#button1').on('click', function () {
@@ -29,7 +30,7 @@ $(document).ready(function() {
           playerTwoMoveTaken.push(boardChoices.position1)
           $('#button1').text('X')
           checkTurns();
-
+          
 
         }
 
@@ -350,5 +351,13 @@ $(document).ready(function() {
 
       whosTurn();
 
+    })
+
+// const restart = function () {
+//   location.reload()
+// }
+
+    $('#restartButton').on('click', function () {
+      location.reload()
     })
 })

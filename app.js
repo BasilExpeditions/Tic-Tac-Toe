@@ -34,19 +34,19 @@ let playerTwo = false;
 const whosTurn = function () {
 
   if(playerOneMoveTaken.length === playerTwoMoveTaken.length) {
-    console.log('PLAYER 1, YOUR TURN')
+    $('h3').text('Turn: Player 1')
     playerOne = true;
     playerTwo = false;
     whoWon();
   }
 
   else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
-    console.log('PLAYER 2, YOUR TURN')
+    $('h3').text('Turn: Player 2')
     playerOne = false;
     playerTwo = true;
     whoWon();
   } else {
-    console.log('PLAYER 1, YOUR TURN')
+    $('h3').text('Turn: Player 1')
     playerOne = true;
     playerTwo = false;
     whoWon();
@@ -64,7 +64,8 @@ const checkTurns = function () {
   totalTurns = parseInt(totalTurns) + 1
   console.log('TOTAL TURNS : ' + totalTurns)
   if (totalTurns >= 9) {
-    console.log('GAME OVER')
+    alert('Its a draw!')
+    location.reload()
   }
 }
 
@@ -84,11 +85,16 @@ const winCondition = {
 const whoWon = function () {
   for ( let keys in winCondition) {
     if (winCondition[keys].every(answer => playerOneMoveTaken.includes(answer))) {
-
       console.log('PLAYER ONE WINS');
+      $('h3').after('<h1>PLAYER ONE WINS</h1>')
+      return;
+
 
     } else if (winCondition[keys].every(answer => playerTwoMoveTaken.includes(answer))) {
       console.log('PLAYER TWO WINS')
+      $('h3').after('<h1>PLAYER TWO WINS</h1>')
+      return;
+
     }
   }
 }
