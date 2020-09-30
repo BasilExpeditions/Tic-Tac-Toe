@@ -38,6 +38,7 @@ const whosTurn = function () {
     playerOne = true;
     playerTwo = false;
     whoWon();
+
   }
 
   else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
@@ -45,11 +46,13 @@ const whosTurn = function () {
     playerOne = false;
     playerTwo = true;
     whoWon();
+
   } else {
     $('h3').text('Turn: React')
     playerOne = true;
     playerTwo = false;
     whoWon();
+
   } if ( gameFinished ) {
     $('h3').text('Game Finished')
 
@@ -64,8 +67,8 @@ let totalTurns = 0;
 
 
 // const checkTurns = function () {
-//   totalTurns = parseInt(totalTurns) + 1
-//   console.log('TOTAL TURNS : ' + totalTurns)
+  // totalTurns = parseInt(totalTurns) + 1
+  // console.log('TOTAL TURNS : ' + totalTurns)
 //   if (totalTurns === 9) {
 //     if ( player1Win === null && player2Win === null ) {
 //       $('h3').after('<h1>ITS A DRAW</h1>')
@@ -95,7 +98,7 @@ const whoWon = function () {
   for ( let keys in winCondition) {
     if (winCondition[keys].every(answer => playerOneMoveTaken.includes(answer))) {
       console.log('PLAYER ONE WINS');
-      $('h3').after('<h1>REACT WINS</h1>')
+      $('h3').replaceWith('<h1>REACT WINS</h1>')
       player1Win = true;
       gameFinished = true;
       return;
@@ -103,25 +106,16 @@ const whoWon = function () {
 
     } else if (winCondition[keys].every(answer => playerTwoMoveTaken.includes(answer))) {
       console.log('PLAYER TWO WINS')
-      $('h3').after('<h1>ANGULAR WINS</h1>')
+      $('h3').replaceWith('<h1>ANGULAR WINS</h1>')
       player2Win = true;
       gameFinished = true;
       return;
-    } else {
-
-      const checkTurns = function () {
-        totalTurns = parseInt(totalTurns) + 1
-        console.log('TOTAL TURNS : ' + totalTurns)
-
-        if (totalTurns === 9) {
-
-          if ( player1Win === null && player2Win === null ) {
-            $('h3').after('<h1>ITS A DRAW</h1>')
-            gameFinished = true;
-            return;
-          }
-        }
-      }
+    } else if (totalTurns == 9) {
+      $('h3').replaceWith('<h1>ITS A DRAW</h1>')
+      return;
     }
+
+
+
   }
 }

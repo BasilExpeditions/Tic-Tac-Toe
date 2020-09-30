@@ -41,6 +41,9 @@ $(document).ready(function() {
 
       whosTurn();
 
+      totalTurns = parseInt(totalTurns) + 1
+      console.log('TOTAL TURNS : ' + totalTurns)
+
     })
 
 
@@ -78,6 +81,9 @@ $(document).ready(function() {
       console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
+
+      totalTurns = parseInt(totalTurns) + 1
+      console.log('TOTAL TURNS : ' + totalTurns)
 
     })
 
@@ -118,6 +124,9 @@ $(document).ready(function() {
 
       whosTurn();
 
+      totalTurns = parseInt(totalTurns) + 1
+      console.log('TOTAL TURNS : ' + totalTurns)
+
     })
 
 
@@ -156,6 +165,10 @@ $(document).ready(function() {
       console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
+
+      totalTurns = parseInt(totalTurns) + 1
+      console.log('TOTAL TURNS : ' + totalTurns)
+
     })
 
 
@@ -195,6 +208,9 @@ $(document).ready(function() {
 
       whosTurn();
 
+      totalTurns = parseInt(totalTurns) + 1
+      console.log('TOTAL TURNS : ' + totalTurns)
+
     })
 
 
@@ -232,7 +248,10 @@ $(document).ready(function() {
       console.log(`Player Ones move: ${playerOneMoveTaken} `)
       console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
+
       whosTurn();
+      totalTurns = parseInt(totalTurns) + 1
+      console.log('TOTAL TURNS : ' + totalTurns)
 
     })
 
@@ -273,6 +292,9 @@ $(document).ready(function() {
 
       whosTurn();
 
+      totalTurns = parseInt(totalTurns) + 1
+      console.log('TOTAL TURNS : ' + totalTurns)
+
     })
 
 
@@ -312,6 +334,9 @@ $(document).ready(function() {
 
       whosTurn();
 
+      totalTurns = parseInt(totalTurns) + 1
+      console.log('TOTAL TURNS : ' + totalTurns)
+
     })
 
 
@@ -350,6 +375,9 @@ $(document).ready(function() {
       console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
+
+      totalTurns = parseInt(totalTurns) + 1
+      console.log('TOTAL TURNS : ' + totalTurns)
 
     })
 
