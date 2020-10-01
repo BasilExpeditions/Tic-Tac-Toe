@@ -37,8 +37,6 @@ $(document).ready(function() {
 
       }
 
-      console.log(`Player Ones move: ${playerOneMoveTaken} `)
-      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
 
@@ -85,8 +83,6 @@ $(document).ready(function() {
 
       }
 
-      console.log(`Player Ones move: ${playerOneMoveTaken} `)
-      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
 
@@ -133,8 +129,6 @@ $(document).ready(function() {
 
       }
 
-      console.log(`Player Ones move: ${playerOneMoveTaken} `)
-      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
 
@@ -178,8 +172,6 @@ $(document).ready(function() {
 
       }
 
-      console.log(`Player Ones move: ${playerOneMoveTaken} `)
-      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
 
@@ -223,8 +215,6 @@ $(document).ready(function() {
 
       }
 
-      console.log(`Player Ones move: ${playerOneMoveTaken} `)
-      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
 
@@ -267,8 +257,6 @@ $(document).ready(function() {
 
       }
 
-      console.log(`Player Ones move: ${playerOneMoveTaken} `)
-      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
 
       whosTurn();
@@ -314,8 +302,6 @@ $(document).ready(function() {
 
       }
 
-      console.log(`Player Ones move: ${playerOneMoveTaken} `)
-      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
 
@@ -360,8 +346,6 @@ $(document).ready(function() {
 
       }
 
-      console.log(`Player Ones move: ${playerOneMoveTaken} `)
-      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
 
@@ -405,9 +389,6 @@ $(document).ready(function() {
         }
 
       }
-
-      console.log(`Player Ones move: ${playerOneMoveTaken} `)
-      console.log(`Player Twos move: ${playerTwoMoveTaken}`)
 
       whosTurn();
 

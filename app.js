@@ -34,7 +34,7 @@ let playerTwo = false;
 const whosTurn = function () {
 
   if(playerOneMoveTaken.length === playerTwoMoveTaken.length) {
-    $('h3').replaceWith('<h3>Turn: <span id="span-react">React</span></h3>')
+    $('h3').replaceWith('<h3>Turn: <a href="https://reactjs.org/""><span id="span-react">React</span></h3>')
     playerOne = true;
     playerTwo = false;
     whoWon();
@@ -42,13 +42,13 @@ const whosTurn = function () {
   }
 
   else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
-    $('h3').replaceWith('<h3>Turn: <span id="span-angular">Angular</span></h3>')
+    $('h3').replaceWith('<h3>Turn: <a href="https://angular.io/"><span id="span-angular">Angular</span></a></h3>')
     playerOne = false;
     playerTwo = true;
     whoWon();
 
   } else {
-    $('h3').replaceWith('<h3>Turn: <span id="span-react">React</span></h3>')
+    $('h3').replaceWith('<h3>Turn: <a href="https://reactjs.org/""><span id="span-react">React</span></h3>')
     playerOne = true;
     playerTwo = false;
     whoWon();
@@ -107,17 +107,14 @@ const whoWon = function () {
   for ( let keys in winCondition) {
 
     if (winCondition[keys].every(answer => playerOneMoveTaken.includes(answer))) {
-      console.log('PLAYER ONE WINS');
-      $('h3').replaceWith('<h1><span id="span-react">REACT</span> WINS</h1>')
+      $('h3').replaceWith('<h1><a href="https://reactjs.org/""><span id="span-react">React</span> wins!</h1>')
       player1Win = true;
       gameFinished = true;
       return;
 
 
     } else if (winCondition[keys].every(answer => playerTwoMoveTaken.includes(answer))) {
-      console.log('PLAYER TWO WINS')
-      $('h3').replaceWith('<h1><span id="span-angular">ANGULAR</span> WINS</h1>')
-      $("#board-id").children().attr("disabled","disabled");
+      $('h3').replaceWith('<h1><a href="https://angular.io/"><span id="span-angular">Angular</span></a> wins!</h1>')
       player2Win = true;
       gameFinished = true;
       return;
