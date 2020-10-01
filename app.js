@@ -15,7 +15,6 @@ const boardChoices = {
 };
 
 
-
 // Player 1 turn
 
 const playerOneMoveTaken = [];
@@ -29,31 +28,43 @@ const playerTwoMoveTaken = [];
 
 let playerTwo = false;
 
+
+
 // Turn logic
 
 const whosTurn = function () {
 
-  if(playerOneMoveTaken.length === playerTwoMoveTaken.length) {
+  if( playerOneMoveTaken.length === playerTwoMoveTaken.length ) {
+
     $('h3').replaceWith('<h3>Turn: <a href="https://reactjs.org/""><span id="span-react">React</span></h3>')
+
     playerOne = true;
     playerTwo = false;
+
     whoWon();
 
   }
 
-  else if(playerOneMoveTaken.length > playerTwoMoveTaken.length) {
+  else if( playerOneMoveTaken.length > playerTwoMoveTaken.length ) {
+
     $('h3').replaceWith('<h3>Turn: <a href="https://angular.io/"><span id="span-angular">Angular</span></a></h3>')
+
     playerOne = false;
     playerTwo = true;
+
     whoWon();
 
   } else {
+
     $('h3').replaceWith('<h3>Turn: <a href="https://reactjs.org/""><span id="span-react">React</span></h3>')
+
     playerOne = true;
     playerTwo = false;
+
     whoWon();
 
   } if ( gameFinished ) {
+
     $('h3').text('Game Finished')
 
   }
@@ -65,32 +76,27 @@ const whosTurn = function () {
 let totalTurns = 0;
 
 const gameDraw = function () {
-  totalTurns = parseInt(totalTurns) + 1
 
-  if (totalTurns == 9) {
-    $('h3').replaceWith('<h1>DRAW</h1>')
+  totalTurns = parseInt( totalTurns ) + 1
+
+  if ( totalTurns == 9 ) {
+
+    $('h3').replaceWith('<h1>Draw!</h1>')
     return;
+
   }
 }
 
-
-
-// const checkTurns = function () {
-  // totalTurns = parseInt(totalTurns) + 1
-  // console.log('TOTAL TURNS : ' + totalTurns)
-//   if (totalTurns === 9) {
-//     if ( player1Win === null && player2Win === null ) {
-//       $('h3').after('<h1>ITS A DRAW</h1>')
-//       gameFinished = true;
-//     }
-//   }
-// }
 
 let player1Win = null;
 let player2Win = null;
 let gameFinished = false;
 
+
+
 // Win condition
+
+
 
 const winCondition = {
   horizontal1: ['1', '2', '3'],
@@ -104,23 +110,27 @@ const winCondition = {
 }
 
 const whoWon = function () {
-  for ( let keys in winCondition) {
 
-    if (winCondition[keys].every(answer => playerOneMoveTaken.includes(answer))) {
-      $('h3').replaceWith('<h1><a href="https://reactjs.org/""><span id="span-react">React</span> wins!</h1>')
+  for ( let keys in winCondition ) {
+
+    if (winCondition[ keys ].every( answer => playerOneMoveTaken.includes( answer ))) {
+
+      $('h3').replaceWith('<h1><a href="https://reactjs.org/""><span id="span-react">React wins!</span></h1>')
+
       player1Win = true;
       gameFinished = true;
       return;
 
 
-    } else if (winCondition[keys].every(answer => playerTwoMoveTaken.includes(answer))) {
-      $('h3').replaceWith('<h1><a href="https://angular.io/"><span id="span-angular">Angular</span></a> wins!</h1>')
+    } else if ( winCondition[ keys ].every( answer => playerTwoMoveTaken.includes( answer ))) {
+
+      $('h3').replaceWith('<h1><a href="https://angular.io/"><span id="span-angular">Angular wins!</span></a></h1>')
+
       player2Win = true;
       gameFinished = true;
       return;
+
     }
-
-
 
   }
 }

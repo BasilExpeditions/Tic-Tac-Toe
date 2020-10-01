@@ -15,6 +15,7 @@ body {
   margin-top: 10px;
   padding: 15px;
 }
+
 .square {
   padding: 5px;
   text-align: center;
@@ -28,7 +29,6 @@ body {
 .board-container div.square:hover {
   background-color: white;
 }
-
 
 a {
   text-decoration: none !important;
@@ -56,6 +56,7 @@ a:hover {
 #button1, #button4, #button7 {
   border-left: none;
 }
+
 #button7, #button8, #button9 {
   border-bottom: none;
 }
@@ -87,7 +88,15 @@ a:hover {
   border-bottom-right-radius: 10%;
 }
 
-#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover, #button6:hover, #button7:hover, #button8:hover, #button9:hover {
+#button1:hover,
+ #button2:hover,
+  #button3:hover,
+   #button4:hover,
+    #button5:hover,
+     #button6:hover,
+      #button7:hover,
+       #button8:hover,
+        #button9:hover {
   opacity: 0.9;
 }
 
@@ -119,18 +128,22 @@ a:hover {
        animation-iteration-count: infinite;
        animation-timing-function: linear;
    }
+
    @-ms-keyframes spin {
        from { -ms-transform: rotate(0deg); }
        to { -ms-transform: rotate(360deg); }
    }
+
    @-moz-keyframes spin {
        from { -moz-transform: rotate(0deg); }
        to { -moz-transform: rotate(360deg); }
    }
+
    @-webkit-keyframes spin {
        from { -webkit-transform: rotate(0deg); }
        to { -webkit-transform: rotate(360deg); }
    }
+
    @keyframes spin {
        from {
            transform:rotate(0deg);
@@ -161,18 +174,22 @@ a:hover {
        animation-iteration-count: infinite;
        animation-timing-function: linear;
    }
+
    @-ms-keyframes spin {
        from { -ms-transform: rotate(0deg); }
        to { -ms-transform: rotate(360deg); }
    }
+
    @-moz-keyframes spin {
        from { -moz-transform: rotate(0deg); }
        to { -moz-transform: rotate(360deg); }
    }
+
    @-webkit-keyframes spin {
        from { -webkit-transform: rotate(0deg); }
        to { -webkit-transform: rotate(360deg); }
    }
+
    @keyframes spin {
        from {
            transform:rotate(0deg);

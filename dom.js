@@ -7,36 +7,39 @@ $(document).ready(function() {
     $('#button1').on('click', function () {
 
 
-      if(playerOneMoveTaken.includes('1')) {
+      if( playerOneMoveTaken.includes('1')) {
 
-        return console.log(deniedAccess)
+        return console.log( deniedAccess )
 
       }
 
       if(playerTwoMoveTaken.includes('1')) {
 
-        return console.log(deniedAccess)
+        return console.log( deniedAccess )
 
       } else {
 
-        if(playerOne === true) {
-          if(gameFinished === false) {
+        if( playerOne === true ) {
+
+          if( gameFinished === false ) {
+
           playerOneMoveTaken.push(boardChoices.position1)
           $('#button1').append('<i class="fab fa-react"></i>')
-          // checkTurns();
-}
+
+          }
 
         } else {
+
           if(gameFinished === false) {
+
           playerTwoMoveTaken.push(boardChoices.position1)
           $('#button1').append('<i class="fab fa-angular"></i>')
-          // checkTurns();
-}
+
+          }
 
         }
 
       }
-
 
       whosTurn();
 
@@ -45,44 +48,38 @@ $(document).ready(function() {
     })
 
 
-
     $('#button2').on('click', function () {
 
-      if(playerOneMoveTaken.includes('2')) {
-        return console.log(deniedAccess);
+      if( playerOneMoveTaken.includes('2')) {
+        return console.log( deniedAccess );
       }
 
-      if(playerTwoMoveTaken.includes('2')) {
-        return console.log(deniedAccess);
+      if( playerTwoMoveTaken.includes('2')) {
+        return console.log( deniedAccess );
 
       } else {
 
-        if(playerOne === true) {
+        if( playerOne === true ) {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerOneMoveTaken.push(boardChoices.position2)
             $('#button2').append('<i class="fab fa-react"></i>')
 
           }
 
-
-
-
         } else {
 
           if(gameFinished === false) {
+
             playerTwoMoveTaken.push(boardChoices.position2)
             $('#button2').append('<i class="fab fa-angular"></i>')
 
           }
 
-
-
-
         }
 
       }
-
 
       whosTurn();
 
@@ -91,44 +88,43 @@ $(document).ready(function() {
     })
 
 
-
     $('#button3').on('click', function () {
 
 
-      if(playerOneMoveTaken.includes('3')) {
-        return console.log(deniedAccess);
+      if( playerOneMoveTaken.includes('3')) {
+
+        return console.log( deniedAccess );
+
       }
 
       if(playerTwoMoveTaken.includes('3')) {
-        return console.log(deniedAccess);
+
+        return console.log( deniedAccess );
 
       } else {
 
-        if(playerOne === true) {
+        if( playerOne === true ) {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerOneMoveTaken.push(boardChoices.position3)
             $('#button3').append('<i class="fab fa-react"></i>')
-            // checkTurns();
-          }
 
+          }
 
 
         } else {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerTwoMoveTaken.push(boardChoices.position3)
             $('#button3').append('<i class="fab fa-angular"></i>')
-            // checkTurns();
+
           }
-
-
-
 
         }
 
       }
-
 
       whosTurn();
 
@@ -141,37 +137,40 @@ $(document).ready(function() {
     $('#button4').on('click', function () {
 
 
-      if(playerOneMoveTaken.includes('4')) {
-        return console.log(deniedAccess);
+      if( playerOneMoveTaken.includes('4')) {
+
+        return console.log( deniedAccess );
+
       }
 
-      if(playerTwoMoveTaken.includes('4')) {
-        return console.log(deniedAccess);
+      if( playerTwoMoveTaken.includes('4')) {
+
+        return console.log( deniedAccess );
 
       } else {
 
-        if(playerOne === true) {
+        if( playerOne === true ) {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerOneMoveTaken.push(boardChoices.position4)
             $('#button4').append('<i class="fab fa-react"></i>')
-            // checkTurns();
+
           }
 
 
         } else {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerTwoMoveTaken.push(boardChoices.position4)
             $('#button4').append('<i class="fab fa-angular"></i>')
-            // checkTurns();
-          }
 
+          }
 
         }
 
       }
-
 
       whosTurn();
 
@@ -184,37 +183,39 @@ $(document).ready(function() {
     $('#button5').on('click', function () {
 
 
-      if(playerOneMoveTaken.includes('5')) {
-        return console.log(deniedAccess);
+      if( playerOneMoveTaken.includes('5')) {
+
+        return console.log( deniedAccess );
+
       }
 
-      if(playerTwoMoveTaken.includes('5')) {
-        return console.log(deniedAccess);
+      if( playerTwoMoveTaken.includes('5')) {
+
+        return console.log( deniedAccess );
 
       } else {
 
-        if(playerOne === true) {
+        if( playerOne === true ) {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerOneMoveTaken.push(boardChoices.position5)
             $('#button5').append('<i class="fab fa-react"></i>')
-            // checkTurns();
-          }
 
+          }
 
         } else {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerTwoMoveTaken.push(boardChoices.position5)
             $('#button5').append('<i class="fab fa-angular"></i>')
-            // checkTurns();
-          }
 
+          }
 
         }
 
       }
-
 
       whosTurn();
 
@@ -227,37 +228,39 @@ $(document).ready(function() {
     $('#button6').on('click', function () {
 
 
-      if(playerOneMoveTaken.includes('6')) {
-        return console.log(deniedAccess);
+      if( playerOneMoveTaken.includes('6')) {
+
+        return console.log( deniedAccess );
+
       }
 
       if(playerTwoMoveTaken.includes('6')) {
-        return console.log(deniedAccess);
+
+        return console.log( deniedAccess );
 
       } else {
 
-        if(playerOne === true) {
+        if( playerOne === true ) {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerOneMoveTaken.push(boardChoices.position6)
             $('#button6').append('<i class="fab fa-react"></i>')
-            // checkTurns();
+
           }
 
         } else {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerTwoMoveTaken.push(boardChoices.position6)
             $('#button6').append('<i class="fab fa-angular"></i>')
-            // checkTurns();
-          }
 
+          }
 
         }
 
       }
-
-
 
       whosTurn();
       gameDraw();
@@ -269,39 +272,40 @@ $(document).ready(function() {
     $('#button7').on('click', function () {
 
 
-      if(playerOneMoveTaken.includes('7')) {
-        return console.log(deniedAccess);
+      if( playerOneMoveTaken.includes('7')) {
+
+        return console.log( deniedAccess );
+
       }
 
       if(playerTwoMoveTaken.includes('7')) {
-        return console.log(deniedAccess);
+
+        return console.log( deniedAccess );
 
       } else {
 
-        if(playerOne === true) {
+        if( playerOne === true ) {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerOneMoveTaken.push(boardChoices.position7)
             $('#button7').append('<i class="fab fa-react"></i>')
-            // checkTurns();
+
           }
 
 
 
         } else {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
             playerTwoMoveTaken.push(boardChoices.position7)
             $('#button7').append('<i class="fab fa-angular"></i>')
-            // checkTurns();
 
           }
-
 
         }
 
       }
-
 
       whosTurn();
 
@@ -314,38 +318,36 @@ $(document).ready(function() {
     $('#button8').on('click', function () {
 
 
-      if(playerOneMoveTaken.includes('8')) {
-        return console.log(deniedAccess);
+      if( playerOneMoveTaken.includes('8')) {
+        return console.log( deniedAccess );
       }
 
       if(playerTwoMoveTaken.includes('8')) {
-        return console.log(deniedAccess);
+        return console.log( deniedAccess );
 
       } else {
 
-        if(playerOne === true) {
+        if( playerOne === true ) {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerOneMoveTaken.push(boardChoices.position8)
             $('#button8').append('<i class="fab fa-react"></i>')
-            // checkTurns();
+
           }
-
-
 
         } else {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerTwoMoveTaken.push(boardChoices.position8)
             $('#button8').append('<i class="fab fa-angular"></i>')
-            // checkTurns();
-          }
 
+          }
 
         }
 
       }
-
 
       whosTurn();
 
@@ -358,33 +360,35 @@ $(document).ready(function() {
     $('#button9').on('click', function () {
 
 
-      if(playerOneMoveTaken.includes('9')) {
-        return console.log(deniedAccess);
+      if( playerOneMoveTaken.includes('9')) {
+
+        return console.log( deniedAccess );
+
       }
 
       if(playerTwoMoveTaken.includes('9')) {
-        return console.log(deniedAccess);
+
+        return console.log( deniedAccess );
 
       } else {
 
-        if(playerOne === true) {
+        if( playerOne === true ) {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerOneMoveTaken.push(boardChoices.position9)
             $('#button9').append('<i class="fab fa-react"></i>')
-            // checkTurns();
+
           }
-
-
 
         } else {
 
-          if(gameFinished === false) {
+          if( gameFinished === false ) {
+
             playerTwoMoveTaken.push(boardChoices.position9)
             $('#button9').append('<i class="fab fa-angular"></i>')
-            // checkTurns();
-          }
 
+          }
 
         }
 
@@ -396,9 +400,6 @@ $(document).ready(function() {
 
     })
 
-// const restart = function () {
-//   location.reload()
-// }
 
     $('#restartButton').on('click', function () {
       location.reload()
