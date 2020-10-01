@@ -208,7 +208,8 @@ a:hover {
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 2) {
   h1 {
-    margin: 0 auto;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 }
 
@@ -219,7 +220,8 @@ a:hover {
   and (-webkit-device-pixel-ratio: 2)
   and (orientation: portrait) {
     h1 {
-      margin: 0 auto;
+      margin-right: 40px;
+      margin-left: 40px;
     }
 }
 
@@ -230,7 +232,8 @@ a:hover {
   and (-webkit-device-pixel-ratio: 2)
   and (orientation: landscape) {
     h1 {
-      margin: 0 auto;
+      margin-right: 40px;
+      margin-left: 40px;
     }
 }
 
@@ -242,7 +245,8 @@ a:hover {
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 3) {
     h1 {
-      margin: 0 auto;
+      margin-right: 40px;
+      margin-left: 40px;
     }
 }
 
@@ -253,7 +257,8 @@ a:hover {
   and (-webkit-device-pixel-ratio: 3)
   and (orientation: portrait) {
     h1 {
-      margin: 0 auto;
+      margin-right: 40px;
+      margin-left: 40px;
     }
 }
 
@@ -264,7 +269,8 @@ a:hover {
   and (-webkit-device-pixel-ratio: 3)
   and (orientation: landscape) {
     h1 {
-      margin: 0 auto;
+      margin-right: 40px;
+      margin-left: 40px;
     }
 }
 
@@ -276,7 +282,8 @@ a:hover {
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 4) {
     h1 {
-      margin: 0 auto;
+      margin-right: 40px;
+      margin-left: 40px;
     }
 }
 
@@ -287,7 +294,8 @@ a:hover {
   and (-webkit-device-pixel-ratio: 4)
   and (orientation: portrait) {
     h1 {
-      margin: 0 auto;
+      margin-right: 40px;
+      margin-left: 40px;
     }
 }
 
@@ -298,6 +306,7 @@ a:hover {
   and (-webkit-device-pixel-ratio: 4)
   and (orientation: landscape) {
     h1 {
-      margin: 0 auto;
+      margin-right: 40px;
+      margin-left: 40px;
     }
 }
