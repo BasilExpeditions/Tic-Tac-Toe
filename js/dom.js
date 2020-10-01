@@ -33,7 +33,7 @@ $(document).ready(function() {
           if(gameFinished === false) {
 
           playerTwoMoveTaken.push(boardChoices.position1)
-          $('#button1').append('<i class="fab fa-angular"></i>')
+          $('#button1').append('<img src="css/angular-icon-1.svg" alt="Angular icon">')
 
           }
 
@@ -73,7 +73,7 @@ $(document).ready(function() {
           if(gameFinished === false) {
 
             playerTwoMoveTaken.push(boardChoices.position2)
-            $('#button2').append('<i class="fab fa-angular"></i>')
+            $('#button2').append('<img src="css/angular-icon-1.svg" alt="Angular icon">')
 
           }
 
@@ -118,7 +118,7 @@ $(document).ready(function() {
           if( gameFinished === false ) {
 
             playerTwoMoveTaken.push(boardChoices.position3)
-            $('#button3').append('<i class="fab fa-angular"></i>')
+            $('#button3').append('<img src="css/angular-icon-1.svg" alt="Angular icon">')
 
           }
 
@@ -164,7 +164,7 @@ $(document).ready(function() {
           if( gameFinished === false ) {
 
             playerTwoMoveTaken.push(boardChoices.position4)
-            $('#button4').append('<i class="fab fa-angular"></i>')
+            $('#button4').append('<img src="css/angular-icon-1.svg" alt="Angular icon">')
 
           }
 
@@ -209,7 +209,7 @@ $(document).ready(function() {
           if( gameFinished === false ) {
 
             playerTwoMoveTaken.push(boardChoices.position5)
-            $('#button5').append('<i class="fab fa-angular"></i>')
+            $('#button5').append('<img src="css/angular-icon-1.svg" alt="Angular icon">')
 
           }
 
@@ -254,7 +254,7 @@ $(document).ready(function() {
           if( gameFinished === false ) {
 
             playerTwoMoveTaken.push(boardChoices.position6)
-            $('#button6').append('<i class="fab fa-angular"></i>')
+            $('#button6').append('<img src="css/angular-icon-1.svg" alt="Angular icon">')
 
           }
 
@@ -299,7 +299,7 @@ $(document).ready(function() {
 
           if( gameFinished === false ) {
             playerTwoMoveTaken.push(boardChoices.position7)
-            $('#button7').append('<i class="fab fa-angular"></i>')
+            $('#button7').append('<img src="css/angular-icon-1.svg" alt="Angular icon">')
 
           }
 
@@ -341,7 +341,7 @@ $(document).ready(function() {
           if( gameFinished === false ) {
 
             playerTwoMoveTaken.push(boardChoices.position8)
-            $('#button8').append('<i class="fab fa-angular"></i>')
+            $('#button8').append('<img src="css/angular-icon-1.svg" alt="Angular icon">')
 
           }
 
@@ -386,7 +386,7 @@ $(document).ready(function() {
           if( gameFinished === false ) {
 
             playerTwoMoveTaken.push(boardChoices.position9)
-            $('#button9').append('<i class="fab fa-angular"></i>')
+            $('#button9').append('<img id="angularInBox" src="css/angular-icon-1.svg" alt="Angular icon">')
 
           }
 
@@ -401,7 +401,29 @@ $(document).ready(function() {
     })
 
 
-    $('#restartButton').on('click', function () {
-      location.reload()
-    })
+    // $('#restartButton').on('click', function () {
+    //   location.reload()
+    // })
+
+    let playAgain = function () {
+          playerOneMoveTaken = []
+          playerTwoMoveTaken = []
+          totalTurns = 0
+
+            gameFinished = false;
+            player1Win = null;
+            player2Win = null;
+            playerOne = true;
+
+            $('.square').empty();
+
+            $('#bottom-result').replaceWith('<h3>Turn: <a href="https://reactjs.org/" target="_blank"><span id="span-react">React</span></h3>')
+
+            $(".board-container").removeClass("disable-click");
+
+          };
+
+        $('#restartButton').on("click", playAgain)
+
+
 })

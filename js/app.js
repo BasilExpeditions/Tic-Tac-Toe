@@ -14,19 +14,28 @@ const boardChoices = {
   position9: '9',
 };
 
+let gameFinished = false;
 
 // Player 1 turn
 
-const playerOneMoveTaken = [];
+let playerOneMoveTaken = [];
 
 let playerOne = true;
+
+let playerOneScore = 0;
+
+let player1Win = null;
 
 
 // Player 2 turn
 
-const playerTwoMoveTaken = [];
+let playerTwoMoveTaken = [];
 
 let playerTwo = false;
+
+let playerTwoScore = 0;
+
+let player2Win = null;
 
 
 
@@ -36,7 +45,7 @@ const whosTurn = function () {
 
   if( playerOneMoveTaken.length === playerTwoMoveTaken.length ) {
 
-    $('h3').replaceWith('<h3>Turn: <a href="https://reactjs.org/" target="_blank"><span id="span-react">React</span></h3>')
+    $('h3').replaceWith('<h3 id="bottom-result">Turn: <a href="https://reactjs.org/" target="_blank"><span id="span-react">React</span></h3>')
 
     playerOne = true;
     playerTwo = false;
@@ -47,7 +56,7 @@ const whosTurn = function () {
 
   else if( playerOneMoveTaken.length > playerTwoMoveTaken.length ) {
 
-    $('h3').replaceWith('<h3>Turn: <a href="https://angular.io/" target="_blank"><span id="span-angular">Angular</span></a></h3>')
+    $('h3').replaceWith('<h3 id="bottom-result">Turn: <a href="https://angular.io/" target="_blank"><span id="span-angular">Angular</span></a></h3>')
 
     playerOne = false;
     playerTwo = true;
@@ -56,18 +65,15 @@ const whosTurn = function () {
 
   } else {
 
-    $('h3').replaceWith('<h3>Turn: <a href="https://reactjs.org/" target="_blank"><span id="span-react">React</span></h3>')
+    $('h3').replaceWith('<h3 id="bottom-result">Turn: <a href="https://reactjs.org/" target="_blank"><span id="span-react">React</span></h3>')
 
     playerOne = true;
     playerTwo = false;
 
     whoWon();
 
-  } if ( gameFinished ) {
-
-    $('h3').text('Game Finished')
-
   }
+
 
 }
 
@@ -81,21 +87,14 @@ const gameDraw = function () {
 
   if ( totalTurns == 9 ) {
 
-    $('h3').replaceWith('<h1>Draw!</h1>')
+    $('h3').replaceWith('<h1 id="bottom-result">Draw!</h1>')
     return;
 
   }
 }
 
 
-let player1Win = null;
-let player2Win = null;
-let gameFinished = false;
-
-
-
 // Win condition
-
 
 
 const winCondition = {
@@ -115,22 +114,41 @@ const whoWon = function () {
 
     if (winCondition[ keys ].every( answer => playerOneMoveTaken.includes( answer ))) {
 
-      $('h3').replaceWith('<h1><a href="https://reactjs.org/" target="_blank"><span id="span-react">React wins!</span></h1>')
+      $('h3').replaceWith('<h1 id="bottom-result"><a href="https://reactjs.org/" target="_blank"><span id="span-react">React wins!</span></h1>')
 
       player1Win = true;
       gameFinished = true;
+
+      if ( player1Win ) {
+
+         playerOneScore = playerOneScore + 1
+        $('#reactScore').text(`${ playerOneScore }`)
+        $('.board-container').addClass("disable-click");
+
+      }
+
       return;
 
 
     } else if ( winCondition[ keys ].every( answer => playerTwoMoveTaken.includes( answer ))) {
 
-      $('h3').replaceWith('<h1><a href="https://angular.io/" target="_blank"><span id="span-angular">Angular wins!</span></a></h1>')
+      $('h3').replaceWith('<h1 id="bottom-result"><a href="https://angular.io/" target="_blank"><span id="span-angular">Angular wins!</span></a></h1>')
 
       player2Win = true;
       gameFinished = true;
+
+      if ( player2Win ) {
+
+        playerTwoScore +=1
+        $('#angularScore').text(`${ playerTwoScore }`)
+        $('.board-container').addClass("disable-click");
+
+      }
+
       return;
 
     }
 
   }
+
 }
