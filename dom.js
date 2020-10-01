@@ -2,7 +2,6 @@ $(document).ready(function() {
 
     whosTurn();
 
-
     const deniedAccess = 'This position has already been used'
 
     $('#button1').on('click', function () {
@@ -21,16 +20,18 @@ $(document).ready(function() {
       } else {
 
         if(playerOne === true) {
+          if(gameFinished === false) {
           playerOneMoveTaken.push(boardChoices.position1)
           $('#button1').append('<i class="fab fa-react"></i>')
           // checkTurns();
-
+}
 
         } else {
+          if(gameFinished === false) {
           playerTwoMoveTaken.push(boardChoices.position1)
           $('#button1').append('<i class="fab fa-angular"></i>')
           // checkTurns();
-
+}
 
         }
 
@@ -60,16 +61,24 @@ $(document).ready(function() {
 
         if(playerOne === true) {
 
-          playerOneMoveTaken.push(boardChoices.position2)
-          $('#button2').append('<i class="fab fa-react"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerOneMoveTaken.push(boardChoices.position2)
+            $('#button2').append('<i class="fab fa-react"></i>')
+
+          }
+
+
 
 
         } else {
 
-          playerTwoMoveTaken.push(boardChoices.position2)
-          $('#button2').append('<i class="fab fa-angular"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerTwoMoveTaken.push(boardChoices.position2)
+            $('#button2').append('<i class="fab fa-angular"></i>')
+
+          }
+
+
 
 
         }
@@ -101,16 +110,23 @@ $(document).ready(function() {
 
         if(playerOne === true) {
 
-          playerOneMoveTaken.push(boardChoices.position3)
-          $('#button3').append('<i class="fab fa-react"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerOneMoveTaken.push(boardChoices.position3)
+            $('#button3').append('<i class="fab fa-react"></i>')
+            // checkTurns();
+          }
+
 
 
         } else {
 
-          playerTwoMoveTaken.push(boardChoices.position3)
-          $('#button3').append('<i class="fab fa-angular"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerTwoMoveTaken.push(boardChoices.position3)
+            $('#button3').append('<i class="fab fa-angular"></i>')
+            // checkTurns();
+          }
+
+
 
 
         }
@@ -142,16 +158,20 @@ $(document).ready(function() {
 
         if(playerOne === true) {
 
-          playerOneMoveTaken.push(boardChoices.position4)
-          $('#button4').append('<i class="fab fa-react"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerOneMoveTaken.push(boardChoices.position4)
+            $('#button4').append('<i class="fab fa-react"></i>')
+            // checkTurns();
+          }
 
 
         } else {
 
-          playerTwoMoveTaken.push(boardChoices.position4)
-          $('#button4').append('<i class="fab fa-angular"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerTwoMoveTaken.push(boardChoices.position4)
+            $('#button4').append('<i class="fab fa-angular"></i>')
+            // checkTurns();
+          }
 
 
         }
@@ -183,16 +203,20 @@ $(document).ready(function() {
 
         if(playerOne === true) {
 
-          playerOneMoveTaken.push(boardChoices.position5)
-          $('#button5').append('<i class="fab fa-react"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerOneMoveTaken.push(boardChoices.position5)
+            $('#button5').append('<i class="fab fa-react"></i>')
+            // checkTurns();
+          }
 
 
         } else {
 
-          playerTwoMoveTaken.push(boardChoices.position5)
-          $('#button5').append('<i class="fab fa-angular"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerTwoMoveTaken.push(boardChoices.position5)
+            $('#button5').append('<i class="fab fa-angular"></i>')
+            // checkTurns();
+          }
 
 
         }
@@ -224,16 +248,19 @@ $(document).ready(function() {
 
         if(playerOne === true) {
 
-          playerOneMoveTaken.push(boardChoices.position6)
-          $('#button6').append('<i class="fab fa-react"></i>')
-          // checkTurns();
-
+          if(gameFinished === false) {
+            playerOneMoveTaken.push(boardChoices.position6)
+            $('#button6').append('<i class="fab fa-react"></i>')
+            // checkTurns();
+          }
 
         } else {
 
-          playerTwoMoveTaken.push(boardChoices.position6)
-          $('#button6').append('<i class="fab fa-angular"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerTwoMoveTaken.push(boardChoices.position6)
+            $('#button6').append('<i class="fab fa-angular"></i>')
+            // checkTurns();
+          }
 
 
         }
@@ -265,16 +292,22 @@ $(document).ready(function() {
 
         if(playerOne === true) {
 
-          playerOneMoveTaken.push(boardChoices.position7)
-          $('#button7').append('<i class="fab fa-react"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerOneMoveTaken.push(boardChoices.position7)
+            $('#button7').append('<i class="fab fa-react"></i>')
+            // checkTurns();
+          }
+
 
 
         } else {
 
-          playerTwoMoveTaken.push(boardChoices.position7)
-          $('#button7').append('<i class="fab fa-angular"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerTwoMoveTaken.push(boardChoices.position7)
+            $('#button7').append('<i class="fab fa-angular"></i>')
+            // checkTurns();
+
+          }
 
 
         }
@@ -306,16 +339,21 @@ $(document).ready(function() {
 
         if(playerOne === true) {
 
-          playerOneMoveTaken.push(boardChoices.position8)
-          $('#button8').append('<i class="fab fa-react"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerOneMoveTaken.push(boardChoices.position8)
+            $('#button8').append('<i class="fab fa-react"></i>')
+            // checkTurns();
+          }
+
 
 
         } else {
 
-          playerTwoMoveTaken.push(boardChoices.position8)
-          $('#button8').append('<i class="fab fa-angular"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerTwoMoveTaken.push(boardChoices.position8)
+            $('#button8').append('<i class="fab fa-angular"></i>')
+            // checkTurns();
+          }
 
 
         }
@@ -347,16 +385,21 @@ $(document).ready(function() {
 
         if(playerOne === true) {
 
-          playerOneMoveTaken.push(boardChoices.position9)
-          $('#button9').append('<i class="fab fa-react"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerOneMoveTaken.push(boardChoices.position9)
+            $('#button9').append('<i class="fab fa-react"></i>')
+            // checkTurns();
+          }
+
 
 
         } else {
 
-          playerTwoMoveTaken.push(boardChoices.position9)
-          $('#button9').append('<i class="fab fa-angular"></i>')
-          // checkTurns();
+          if(gameFinished === false) {
+            playerTwoMoveTaken.push(boardChoices.position9)
+            $('#button9').append('<i class="fab fa-angular"></i>')
+            // checkTurns();
+          }
 
 
         }

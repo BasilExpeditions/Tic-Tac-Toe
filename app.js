@@ -88,7 +88,7 @@ const gameDraw = function () {
 
 let player1Win = null;
 let player2Win = null;
-let gameFinished = null;
+let gameFinished = false;
 
 // Win condition
 
